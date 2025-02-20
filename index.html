@@ -86,14 +86,14 @@
 
 <div class="container">
     <!-- Title -->
-    <h1 class="paper-title">Towards Zero-Shot Anomaly Detection and Reasoning with Multimodal Large Language Models</h1>
-    <p class="author">Jiacong Xu, Shao-Yuan Lo, Bardia Safaei, Vishal M. Patel, and Isht Dwivedi</p>
+    <h1 class="paper-title">Filter Images First, Generate Instructions Later: Pre-Instruction Data Selection for Visual Instruction Tuning</h1>
+    <p class="author">Bardia Safaei, Faizan Siddiqui, Jiacong Xu, Vishal M. Patel, Shao-Yuan Lo</p>
     <p class="affiliation">Johns Hopkins University, Honda Research Institute USA</p>
 
     <!-- Links -->
     <div class="btn-container">
-        <a href="https://arxiv.org/pdf/2502.07601" class="btn btn-danger btn-custom" target="_blank">📄 ArXiv</a>
-        <a href="https://github.com/honda-research-institute/Anomaly-OV" class="btn btn-primary btn-custom" target="_blank">🔗 GitHub</a>
+        <a href="https://example.com/arxiv" class="btn btn-danger btn-custom" target="_blank">📄 ArXiv</a>
+        <a href="https://example.com/code" class="btn btn-primary btn-custom" target="_blank">🔗 GitHub</a>
         <a href="https://example.com/dataset" class="btn btn-success btn-custom" target="_blank">📥 Dataset</a>
         <a href="https://example.com/benchmark" class="btn btn-warning btn-custom" target="_blank">📊 Benchmark</a>
     </div>
@@ -101,24 +101,17 @@
     <!-- Abstract -->
     <h2 class="section-title">Abstract</h2>
     <p class="abstract-content">
-        Zero-Shot Anomaly Detection (ZSAD) is an emerging AD paradigm. Unlike the traditional 
-        unsupervised AD setting that requires a large number of normal samples to train a 
-        model, ZSAD is more practical for handling data-restricted 
-        real-world scenarios. Recently, Multimodal Large Language Models (MLLMs) have shown 
-        revolutionary reasoning capabilities in various vision tasks. However, the reasoning 
-        of image abnormalities remains underexplored due to the lack of corresponding 
-        datasets and benchmarks. To facilitate research in AD & reasoning, we establish 
-        the first visual instruction tuning dataset, Anomaly-Instruct-125k, 
-        and the evaluation benchmark, VisA-D&R. Through investigation with 
-        our benchmark, we reveal that current MLLMs like GPT-4o cannot accurately detect
-         and describe fine-grained anomalous details in images. To address this, we 
-         propose Anomaly-OneVision (Anomaly-OV), the first specialist visual 
-         assistant for ZSAD and reasoning. Inspired by human behavior in visual inspection, 
-         Anomaly-OV leverages a Look-Twice Feature Matching (LTFM) mechanism to adaptively 
-         select and emphasize abnormal visual tokens for its LLM. Extensive experiments 
-         demonstrate that Anomaly-OV achieves significant improvements over advanced generalist 
-         models in both detection and reasoning. Furthermore, extensions to medical and 
-         3D anomaly reasoning are provided for future study.
+        Visual instruction tuning (VIT) for large vision-language models (LVLMs) requires training on expansive datasets of 
+        image-instruction pairs, which can be costly. Recent efforts in VIT data selection aim to select a small subset of 
+        high-quality image-instruction pairs, reducing VIT runtime while maintaining performance comparable to full-scale training. 
+        However, a major challenge often overlooked is that generating instructions from unlabeled images for VIT is highly expensive. 
+        Most existing VIT datasets rely heavily on human annotations or paid services like the GPT API, which limits users with constrained
+        resources from creating VIT datasets for custom applications. To address this, we introduce Pre-Instruction Data Selection (PreSel), 
+        a more practical data selection paradigm that directly selects the most beneficial unlabeled images and generates instructions 
+        only for the selected images. PreSel first estimates the relative importance of each vision task within VIT datasets to derive 
+        task-wise sampling budgets. It then clusters image features within each task, selecting the most representative images with the budget. 
+        This approach reduces computational overhead for both instruction generation during VIT data formation and LVLM fine-tuning. 
+        By generating instructions for only 15% of the images, PreSel achieves performance comparable to full-data VIT on the LLaVA-1.5 and Vision-Flan datasets.
     </p>
 
     <!-- Method Figure -->
