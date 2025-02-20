@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paper Title - Project Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin-top: 20px;
+        }
+        .paper-title {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .author {
+            font-size: 17px;
+            color: #212529;
+            font-weight: bold;
+        }
+        .affiliation {
+            font-size: 16px;
+            color: #6c757d;
+        }
+        .section-title {
+            margin-top: 30px;
+            font-weight: bold;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .image-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 10px auto;
+        }
+        .image-container img {
+            width: 100%; /* 让图片完全适配页面宽度 */
+            height: auto; /* 保持纵横比，防止变形 */
+            border-radius: 5px;
+            display: block;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 900px;
+            margin: 15px auto;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .btn-container {
+            margin-top: 15px;
+        }
+        .btn-custom {
+            padding: 10px 16px;
+            font-size: 16px;
+            margin: 8px;
+        }
+        .abstract-content {
+            text-align: left;
+            margin: 10px auto;
+            max-width: 900px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Title -->
+    <h1 class="paper-title">Towards Zero-Shot Anomaly Detection and Reasoning with Multimodal Large Language Models</h1>
+    <p class="author">Jiacong Xu, Shao-Yuan Lo, Bardia Safaei, Vishal M. Patel, and Isht Dwivedi</p>
+    <p class="affiliation">Johns Hopkins University, Honda Research Institute USA</p>
+
+    <!-- Links -->
+    <div class="btn-container">
+        <a href="https://arxiv.org/pdf/2502.07601" class="btn btn-danger btn-custom" target="_blank">📄 ArXiv</a>
+        <a href="https://github.com/honda-research-institute/Anomaly-OV" class="btn btn-primary btn-custom" target="_blank">🔗 GitHub</a>
+        <a href="https://example.com/dataset" class="btn btn-success btn-custom" target="_blank">📥 Dataset</a>
+        <a href="https://example.com/benchmark" class="btn btn-warning btn-custom" target="_blank">📊 Benchmark</a>
+    </div>
+
+    <!-- Abstract -->
+    <h2 class="section-title">Abstract</h2>
+    <p class="abstract-content">
+        Zero-Shot Anomaly Detection (ZSAD) is an emerging AD paradigm. Unlike the traditional 
+        unsupervised AD setting that requires a large number of normal samples to train a 
+        model, ZSAD is more practical for handling data-restricted 
+        real-world scenarios. Recently, Multimodal Large Language Models (MLLMs) have shown 
+        revolutionary reasoning capabilities in various vision tasks. However, the reasoning 
+        of image abnormalities remains underexplored due to the lack of corresponding 
+        datasets and benchmarks. To facilitate research in AD & reasoning, we establish 
+        the first visual instruction tuning dataset, Anomaly-Instruct-125k, 
+        and the evaluation benchmark, VisA-D&R. Through investigation with 
+        our benchmark, we reveal that current MLLMs like GPT-4o cannot accurately detect
+         and describe fine-grained anomalous details in images. To address this, we 
+         propose Anomaly-OneVision (Anomaly-OV), the first specialist visual 
+         assistant for ZSAD and reasoning. Inspired by human behavior in visual inspection, 
+         Anomaly-OV leverages a Look-Twice Feature Matching (LTFM) mechanism to adaptively 
+         select and emphasize abnormal visual tokens for its LLM. Extensive experiments 
+         demonstrate that Anomaly-OV achieves significant improvements over advanced generalist 
+         models in both detection and reasoning. Furthermore, extensions to medical and 
+         3D anomaly reasoning are provided for future study.
+    </p>
+
+    <!-- Method Figure -->
+    <h2 class="section-title">Method</h2>
+    <div class="image-container">
+        <img src="anomaly_ov.jpg" alt="Method Illustration">
+    </div>
+
+    <!-- Dataset Figure -->
+    <h2 class="section-title">Dataset</h2>
+    <div class="image-container">
+        <img src="dataset.jpg" alt="Dataset Illustration">
+    </div>
+
+    <!-- YouTube Video -->
+    <h2 class="section-title">Demonstration</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <p class="footer">© 2025 Your Name | Last updated: February 2025</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
