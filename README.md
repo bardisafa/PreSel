@@ -2,7 +2,7 @@
   
 # PreSel: Pre-Instruction Data Selection <br> for Visual Instruction Tuning 
 
-<h1 style="color:#FFA500; margin-top:0;">CVPR 2025</h1> <!-- Added line -->
+<img src="https://img.shields.io/badge/CVPR-2025-FFA500?style=for-the-badge&logo=google-scholar&logoColor=white"> <!-- Added line -->
 
 
 [Bardia Safaei](https://sites.google.com/view/bardiasafaei) &emsp; [Faizan Siddiqui](https://www.linkedin.com/in/faizan-sid/) &emsp; [Jiacong Xu](https://xujiacong.github.io/) &emsp; [Vishal M. Patel](https://engineering.jhu.edu/faculty/vishal-patel/ ) &emsp; [Shao-Yuan Lo](https://shaoyuanlo.github.io/)
