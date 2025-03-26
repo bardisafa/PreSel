@@ -1,7 +1,6 @@
 <div align="center">
   
-# PreSel: Pre-Instruction Data Selection <br> for Visual Instruction Tuning (CVPR 2025) 
-
+# PreSel: Pre-Instruction Data Selection <br> for Visual Instruction Tuning
 <img src="https://img.shields.io/badge/CVPR-2025-FFA500?style=for-the-badge&logo=google-scholar&logoColor=white"> <!-- Added line -->
 
 
