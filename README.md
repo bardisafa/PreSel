@@ -20,7 +20,7 @@ Johns Hopkins University, Honda Research Institute USA
 Please first install LLaVA：
 
 ```
-cd Self-Filter
+cd PreSel
 git clone https://github.com/haotian-liu/LLaVA.git
 ```
 
