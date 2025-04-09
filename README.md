@@ -26,7 +26,15 @@ git clone https://github.com/haotian-liu/LLaVA.git
 
 Then prepare the environment for LLaVA [here](https://github.com/haotian-liu/LLaVA).
 
-### 2. Preprocess the Dataset
+### 2. Download the Datasets
+
+#### LLaVA-665K Dataset
+For the LLaVA dataset, please download the LLaVA-665K dataset following the instructions from the [LLaVA GitHub repository](https://github.com/haotian-liu/LLaVA?tab=readme-ov-file#train). This dataset is used for visual instruction tuning and contains a diverse set of visual-language examples.
+
+#### Vision-FLAN Dataset
+For the Vision-FLAN dataset, please download the data from the [Vision-FLAN website](https://vision-flan.github.io/#download). This dataset provides a comprehensive collection of visual-language tasks for instruction tuning.
+
+### 3. Preprocess the Dataset
 We first add a unique index for each instruction in the original dataset, to better identify each sample:
 
 ```bash
