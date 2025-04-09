@@ -25,3 +25,14 @@ git clone https://github.com/haotian-liu/LLaVA.git
 ```
 
 Then prepare the environment for LLaVA [here](https://github.com/haotian-liu/LLaVA).
+
+### 2. Preprocess the Dataset
+We first add a unique index for each instruction in the original dataset, to better identify each sample:
+
+```bash
+python data_process/preprocess.py \
+    --raw_annotation_path path/to/your/dataset.json \
+    --new_annotation_save_path path/to/save/processed_dataset.json
+```
+
+This script adds a unique identifier to each sample in your dataset, which is essential for the data selection process. The processed dataset will be saved to the specified path.
