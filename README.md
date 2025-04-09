@@ -2,7 +2,6 @@
   
 # PreSel: Pre-Instruction Data Selection <br> for Visual Instruction Tuning
 <img src="https://img.shields.io/badge/CVPR-2025-FFA500?style=for-the-badge&logo=google-scholar&logoColor=white">
-<img src="https://img.shields.io/badge/CVPR-Highlight-FF0000?style=for-the-badge&logo=google-scholar&logoColor=white">
 
 **🌟 CVPR 2025 Highlight Paper 🌟**
 
