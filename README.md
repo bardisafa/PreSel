@@ -20,14 +20,16 @@ Johns Hopkins University, Honda Research Institute USA
 ### 1. Prepare the Environment
 Please first install LLaVA：
 
-```
+```bash
 cd PreSel
 git clone https://github.com/haotian-liu/LLaVA.git
 ```
 
 Then prepare the environment for LLaVA [here](https://github.com/haotian-liu/LLaVA).
 
-### 2. Download the Datasets
+## Dataset Preparation
+
+### 1. Download the Datasets
 
 #### LLaVA-665K Dataset
 For the LLaVA dataset, please download the LLaVA-665K dataset following the instructions from the [LLaVA GitHub repository](https://github.com/haotian-liu/LLaVA?tab=readme-ov-file#train). This dataset is used for visual instruction tuning and contains a diverse set of visual-language examples.
@@ -35,15 +37,17 @@ For the LLaVA dataset, please download the LLaVA-665K dataset following the inst
 #### Vision-FLAN Dataset
 For the Vision-FLAN dataset, please download the data from the [Vision-FLAN website](https://vision-flan.github.io/#download). This dataset provides a comprehensive collection of visual-language tasks for instruction tuning.
 
-After downloading the datasets, please place all data files in the `/data` directory. 
+After downloading the datasets, please place all data files in the `/datasets` directory. 
 
-### 3. Preprocess the Dataset
+### 2. Preprocess the Dataset
 We first add a unique index for each instruction in the original dataset, to better identify each sample:
 
 ```bash
 python data_process/preprocess.py \
-    --raw_annotation_path data/your_dataset.json \
-    --new_annotation_save_path data/processed_dataset.json
+    --raw_annotation_path datasets/your_dataset.json \
+    --new_annotation_save_path datasets/processed_dataset.json
 ```
 
-This script adds a unique identifier to each sample in your dataset, which is essential for the data selection process. The processed dataset will be saved to the specified path.
+This script adds a unique identifier to each sample in your dataset, which is essential for the data selection process. The processed dataset will be saved to the specified path. We will be using the json files with the unique_idx included in the code. 
+
+Please note that as stated in the paper, for the LLaVA-1.5 dataset we remove the text-only instructions from the data, as our method focuses on selecting the images. You can either remove them yourself or use the already processed json file [here](https://drive.google.com/file/d/1j8qBxaHTiLVuBKX04Upsqlh7DdlguAfJ/view?usp=sharing).
