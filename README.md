@@ -75,6 +75,14 @@ For LLaVA-1.5 and Vision-FLAN datasets, you can directly use our randomly select
 Place the downloaded JSON files in the `data/reference/` directory.
 
 #### Option 2: Create Your Own Reference Dataset
-For custom datasets, you'll need to create a reference dataset by randomly sampling 5% of images along with their corresponding instructions from each task:
+For custom datasets, you'll need to create a reference dataset by randomly sampling 5% of images along with their corresponding instructions from each task.
+
+After preparing the reference dataset, fine-tune a LLaVA-7B model on it to obtain the reference model. For this step:
+
+1. Download the LLaVA-7B checkpoint (before VIT stage) from [here](https://huggingface.co/liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5)
+
+2. Fine-tune the model using LoRA training (as done in our paper) following the script provided [here](https://github.com/haotian-liu/LLaVA/blob/main/scripts/v1_5/finetune_lora.sh)
+
+This reference model will be used in later steps to estimate task importance values.
 
 
