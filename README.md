@@ -69,10 +69,10 @@ To estimate task importance values, we need a reference model trained on a small
 #### Option 1: Use Our Pre-selected Reference Datasets 
 For LLaVA-1.5 and Vision-FLAN datasets, you can directly use our randomly selected reference datasets (5% of images and their corresponding instructions from each task):
 
-- LLaVA-1.5 reference data (randomly selected 5% images with instructions): [Download JSON](https://drive.google.com/file/d/1ref_llava_5percent/view?usp=sharing)
-- Vision-FLAN reference data (randomly selected 5% images with instructions): [Download JSON](https://drive.google.com/file/d/1ref_vflan_5percent/view?usp=sharing)
+- LLaVA-1.5 reference data (randomly selected 5% images with instructions): [Download JSON](https://drive.google.com/file/d/1zhvJExZNOxumJC9GIHLHHHRlsMaNcs2z/view?usp=sharing)
+- Vision-FLAN reference data (randomly selected 5% images with instructions): [Download JSON](https://drive.google.com/file/d/1ZO63umnUZnA0McYdugvCE0TPn-GPaBXS/view?usp=sharing)
 
-Place the downloaded JSON files in the `data/reference/` directory.
+Place the downloaded JSON files in the `data/` directory.
 
 #### Option 2: Create Your Own Reference Dataset
 For custom datasets, you'll need to create a reference dataset by randomly sampling 5% of images along with their corresponding instructions from each task.
