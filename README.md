@@ -51,3 +51,13 @@ python data_process/preprocess.py \
 This script adds a unique identifier to each sample in your dataset, which is essential for the data selection process. The processed dataset will be saved to the specified path. We will be using the json files with the unique_idx included in the code. 
 
 Please note that as stated in the paper, for the LLaVA-1.5 dataset we remove the text-only instructions from the data, as our method focuses on selecting the images. You can either remove them yourself or use the already processed json file [here](https://drive.google.com/file/d/1j8qBxaHTiLVuBKX04Upsqlh7DdlguAfJ/view?usp=sharing).
+
+### 3. Task Splits
+For our method, we need to split the dataset into different tasks. We provide the task splits used in our experiments:
+
+- LLaVA-1.5 dataset: [Download splits](https://drive.google.com/file/d/17dSI8xZMcr4QvRz_qkWKR4RGSzrABHQm/view?usp=sharing)
+- Vision-FLAN dataset: [Download splits](https://drive.google.com/file/d/yyy/view?usp=sharing)
+
+Place the downloaded task split files in the `clustering_results/` directory.
+
+
