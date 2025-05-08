@@ -81,7 +81,8 @@ After preparing the reference dataset, fine-tune a LLaVA-7B model on it to obtai
 
 1. Download the LLaVA-7B checkpoint (before VIT stage) from [here](https://huggingface.co/liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5)
 
-2. Fine-tune the model using LoRA training (as done in our paper) following the script provided [here](https://github.com/haotian-liu/LLaVA/blob/main/scripts/v1_5/finetune_lora.sh)
+
+Fine-tune the LLaVA-7B model (llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5 from [huggingface](https://huggingface.co/liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5)) using LoRA training following the script provided [here](https://github.com/haotian-liu/LLaVA/blob/main/scripts/v1_5/finetune_lora.sh)
 
 This reference model will be used in later steps to estimate task importance values.
 
