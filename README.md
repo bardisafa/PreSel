@@ -79,9 +79,6 @@ For custom datasets, you'll need to create a reference dataset by randomly sampl
 
 After preparing the reference dataset, fine-tune a LLaVA-7B model on it to obtain the reference model. For this step:
 
-1. Download the LLaVA-7B checkpoint (before VIT stage) from [here](https://huggingface.co/liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5)
-
-
 Fine-tune the LLaVA-7B model [huggingface](https://huggingface.co/liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5) using LoRA training following the script provided [here](https://github.com/haotian-liu/LLaVA/blob/main/scripts/v1_5/finetune_lora.sh)
 
 This reference model will be used in later steps to estimate task-importance values.
