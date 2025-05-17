@@ -102,7 +102,7 @@ Then run the loss/perplexity calculations **twice**:
 python presel/loss_ppl_calc.py \
     --data_path /data/round1_665k_notext.json \
     --model_path /PATH/TO/REFERENCE_MODEL \
-    --image_folder /data/images \
+    --image_folder /datasets \
     --output_file /data/loss_ppl_round1_665k_notext.json
 ```
 
@@ -110,7 +110,7 @@ python presel/loss_ppl_calc.py \
 python presel/loss_ppl_calc.py \
     --data_path /data/round1_665k_notext_img_token.json \
     --model_path /PATH/TO/REFERENCE_MODEL \
-    --image_folder /data/images \
+    --image_folder /datasets \
     --output_file /data/loss_ppl_round1_665k_notext_img_token.json
 ```
 
