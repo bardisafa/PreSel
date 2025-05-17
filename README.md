@@ -60,9 +60,6 @@ For our method, we need to split the dataset into different tasks. We provide th
 
 Place the downloaded and unzipped task split files in the `data/` directory.
 
-
-
-
 ### 4. Reference Model Training
 To estimate task importance values, we need a reference model trained on a small randomly selected reference dataset. You have two options:
 
@@ -82,5 +79,44 @@ After preparing the reference dataset, fine-tune a LLaVA-7B model on it to obtai
 Fine-tune the LLaVA-7B model [huggingface](https://huggingface.co/liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5) using LoRA training following the script provided [here](https://github.com/haotian-liu/LLaVA/blob/main/scripts/v1_5/finetune_lora.sh)
 
 This reference model will be used in later steps to estimate task-importance values.
+
+## Usage
+### 1. Loss/Perplexity Calculations
+
+First, process the reference data to remove the question parts of the instructions:
+
+```bash
+python data_process/remove_instruction.py \
+    --input_path /data/round1_665k_notext.json \
+    --output_path /data/round1_665k_notext_img_token.json
+```
+
+This will create a new file (`/data/round1_665k_notext_img_token.json`).
+
+---
+
+Then run the loss/perplexity calculations **twice**:
+
+
+```bash
+python presel/loss_ppl_calc.py \
+    --data_path /data/round1_665k_notext.json \
+    --model_path /PATH/TO/REFERENCE_MODEL \
+    --image_folder /data/images \
+    --output_file /data/loss_ppl_round1_665k_notext.json
+```
+
+```bash
+python presel/loss_ppl_calc.py \
+    --data_path /data/round1_665k_notext_img_token.json \
+    --model_path /PATH/TO/REFERENCE_MODEL \
+    --image_folder /data/images \
+    --output_file /data/loss_ppl_round1_665k_notext_img_token.json
+```
+
+- Replace `/PATH/TO/REFERENCE_MODEL` with the path to your reference model checkpoint.
+- Adjust `--image_folder` and `--output_file` as needed for your setup.
+
+---
 
 
