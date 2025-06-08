@@ -136,7 +136,11 @@ First, we extract the visual features using DINOv2 model for each task (1 to 10 
 ```bash
 python data_process/extract_feats_665_dino.py --task_num TASK_NUM
 ```
+Then run k-means clustering and sample selection:
 
+```bash
+python data_process/kmeans_clust.py --method typical
+```
 ---
 
 
