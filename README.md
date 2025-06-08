@@ -117,6 +117,20 @@ python presel/loss_ppl_calc.py \
 - Replace `/PATH/TO/REFERENCE_MODEL` with the path to your reference model checkpoint.
 - Adjust `--image_folder` and `--output_file` as needed for your setup.
 
+### 2. Task Importance Estimation
+
+Run the following to get the estimated task-importance values required for our data selection approach:
+
+```bash
+python llava_task_importance.py \
+    --data_w_path /data/loss_ppl_round1_665k_notext.json \
+    --data_wo_path /data/loss_ppl_round1_665k_notext_img_token.json \
+    --reference_data_path /data/round1_665k_notext.json \
+    --task_files_dir /data \
+    --output_dir /data
+```
+
+
 ---
 
 
