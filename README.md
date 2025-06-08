@@ -122,7 +122,7 @@ python presel/loss_ppl_calc.py \
 Run the following to get the estimated task-importance values required for our data selection approach:
 
 ```bash
-python llava_task_importance.py \
+python presel/llava_task_importance.py \
     --data_w_path /data/loss_ppl_round1_665k_notext.json \
     --data_wo_path /data/loss_ppl_round1_665k_notext_img_token.json \
     --reference_data_path /data/round1_665k_notext.json \
