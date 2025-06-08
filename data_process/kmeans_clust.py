@@ -216,7 +216,7 @@ def main(args):
         selected_unique_idxs = typical_sample_selection(unique_idxs, feature_vectors_normalized, labels, N, already_selected_idxs)
     
     os.makedirs(args.save_path, exist_ok=True)
-    save_path = os.path.join(args.save_path, f'new_samples_file{args.task_num}_rnd{args.round}_{args.method}_typical_dino_llava.json')
+    save_path = os.path.join(args.save_path, f'new_samples_file{args.task_num}_rnd{args.round}_{args.method}_T_2sqrt_s12345.json')
     
     with open(save_path, 'w') as file:
         json.dump(selected_unique_idxs, file, indent=2)
