@@ -133,7 +133,7 @@ python presel/llava_task_importance.py \
 
 First, we extract the visual features using DINOv2 model for each task (1 to 10 for the LLaVA dataset):
 
-``bash
+```bash
 python data_process/extract_feats_665_dino.py --task_num TASK_NUM
 ```
 
