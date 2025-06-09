@@ -158,8 +158,7 @@ For Vision-FLAN dataset, the steps are similar to the LLaVA-1.5 dataset mentione
 
 For "Task Importance Estimation", you can directly download the estimated task-importance [here](https://drive.google.com/file/d/1Qw61VKqE8i-MrUfKWApFdKIXKdbBiuZU/view?usp=sharing)
 
-For "Pre-Instruction Data Selection", first use the same code, ```bash 
-data_process/extract_feats_665_dino.py```, to extract VF features.
+For "Pre-Instruction Data Selection", first use the same code, ```bash data_process/extract_feats_665_dino.py```, to extract VF features.
 ---
 
 
