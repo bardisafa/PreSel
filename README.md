@@ -170,6 +170,14 @@ python presel/data_selection.py \
     --dataset_type vision_flan \
     --file_path /datasets/annotation_191-task_1k_add_idx.json
 ```
+
+## Finetuned Models & Selected Data (15%)
+
+| Dataset | 15% Selected Data by PreSel (JSON) | LLaVA-7B Model Finetuned |
+|---------|-----------------------------------|--------------------------|
+| LLaVA-1.5 | [Download](https://drive.google.com/file/d/1h6ttaIrBKhOR_6_HzY_NxALYID289gFF/view?usp=sharing) | [Download](https://drive.google.com/drive/folders/1M8rWMTrfHFaxD_FTOgBjbw_ABio9G_8i?usp=sharing) |
+| Vision-FLAN | [Download](https://drive.google.com/file/d/1HzcV4vfUyPTu8x3CT1xdM5eI96zmm4J_/view?usp=sharing) | [Download](https://drive.google.com/drive/folders/17lbYWWxrsdMVZByK5wLah2iP3YCH_Lig?usp=sharing) |
+
 ---
 
 
