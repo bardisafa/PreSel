@@ -15,6 +15,24 @@ Johns Hopkins University, Honda Research Institute USA
 </div>
 <hr />
 
+## Contents
+- [Installation](#installation)
+  - [Prepare the Environment](#1-prepare-the-environment)
+- [Dataset Preparation](#dataset-preparation)
+  - [Download the Datasets](#1-download-the-datasets)
+  - [Preprocess the Dataset](#2-preprocess-the-dataset)
+  - [Task Splits](#3-task-splits)
+  - [Reference Model Training](#4-reference-model-training)
+- [Usage](#usage)
+  - [Loss/Perplexity Calculations](#1-lossperplexity-calculations)
+  - [Task Importance Estimation](#2-task-importance-estimation)
+  - [Pre-Instruction Data Selection](#3-pre-instruction-data-selection)
+  - [Running on the Vision-FLAN Dataset](#running-on-the-vision-flan-dataset)
+- [Finetuned Models & Selected Data](#finetuned-models--selected-data-15)
+- [Evaluation](#evaluation)
+
+<hr />
+
 ## Installation
 
 ### 1. Prepare the Environment
@@ -172,11 +190,16 @@ python presel/data_selection.py \
 ```
 
 ## Finetuned Models & Selected Data (15%)
+You can find our selected 15% subset of data via PreSel, as well as the fine-tuned models trained on it here:
 
 | Dataset | 15% Selected Data by PreSel (JSON) | LLaVA-7B Model Finetuned |
 |---------|-----------------------------------|--------------------------|
 | LLaVA-1.5 | [Download](https://drive.google.com/file/d/1h6ttaIrBKhOR_6_HzY_NxALYID289gFF/view?usp=sharing) | [Download](https://drive.google.com/drive/folders/1M8rWMTrfHFaxD_FTOgBjbw_ABio9G_8i?usp=sharing) |
 | Vision-FLAN | [Download](https://drive.google.com/file/d/1HzcV4vfUyPTu8x3CT1xdM5eI96zmm4J_/view?usp=sharing) | [Download](https://drive.google.com/drive/folders/17lbYWWxrsdMVZByK5wLah2iP3YCH_Lig?usp=sharing) |
+
+## Evaluation
+Please follow the [original LLaVA page](https://github.com/haotian-liu/LLaVA?tab=readme-ov-file#evaluation) and [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) to evaluate models.
+
 
 ---
 
