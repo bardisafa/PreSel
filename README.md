@@ -152,14 +152,9 @@ python presel/data_selection.py \
 ```
 
 
-## Running on Vision-FLAN Dataset
+### Running on Vision-FLAN Dataset
 
-For Vision-FLAN dataset, the process is similar but with some differences:
-
-### 1. Task Importance Estimation 
-
-Run the following to get task importance values:
-
+For Vision-FLAN dataset, follow these steps:
 
 ---
 
