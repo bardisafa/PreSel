@@ -141,6 +141,15 @@ Then run k-means clustering and sample selection:
 ```bash
 python data_process/kmeans_clust.py --method typical
 ```
+
+Finally, run the following command to finetune the model on the selected data. Make sure to set the BASE_DIR value appropriately. This code implements multi-round training where each round has a budget of 5% of the total data. Note that the results reported in the main paper correspond to round 3 (15% budget).
+
+```bash
+python presel/data_selection.py \
+    --base_dir BASE_DIR \
+    --method presel \
+    --dataset_type llava
+```
 ---
 
 
