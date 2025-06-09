@@ -56,7 +56,7 @@ Please note that as stated in the paper, for the LLaVA-1.5 dataset we remove the
 For our method, we need to split the dataset into different tasks. We provide the task splits used in our experiments:
 
 - LLaVA-1.5 task splits: [Download splits](https://drive.google.com/file/d/1g0tns1MOpSgdS_v91T99sB6vDu5R4DKX/view?usp=sharing)
-- Vision-FLAN dataset: [Download splits](https://drive.google.com/file/d/yyy/view?usp=sharing)
+- Vision-FLAN dataset: [Download splits](https://drive.google.com/file/d/19McAjYnghWteV93I-omTnEXDnZUKEceO/view?usp=sharing)
 
 Place the downloaded and unzipped task split files in the `data/` directory.
 
