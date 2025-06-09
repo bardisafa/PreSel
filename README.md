@@ -35,6 +35,8 @@ Johns Hopkins University, Honda Research Institute USA
   - [Running on the Vision-FLAN Dataset](#running-on-the-vision-flan-dataset)
 - [Finetuned Models & Selected Data](#finetuned-models--selected-data-15)
 - [Evaluation](#evaluation)
+- [Citation](#citation)
+
 
 <hr />
 
@@ -205,6 +207,18 @@ You can find our selected 15% subset of data via PreSel, as well as the fine-tun
 ## Evaluation
 Please follow the [original LLaVA page](https://github.com/haotian-liu/LLaVA?tab=readme-ov-file#evaluation) and [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) to evaluate models.
 
+## Citation
+
+If you find this codebase useful for your research, please cite our paper:
+```bibtex
+@inproceedings{safaei2025filter,
+  title={Filter images first, generate instructions later: Pre-instruction data selection for visual instruction tuning},
+  author={Safaei, Bardia and Siddiqui, Faizan and Xu, Jiacong and Patel, Vishal M and Lo, Shao-Yuan},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={14247--14256},
+  year={2025}
+}
+```
 
 ---
 
