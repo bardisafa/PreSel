@@ -15,6 +15,11 @@ Johns Hopkins University, Honda Research Institute USA
 </div>
 <hr />
 
+## Release Notes 
+- [06/08/2025]: 🔥 **PreSel** codebase is released and open to access. The selected 15% data and the finetuned models on these selected data can be downloaded now.
+
+<hr />
+
 ## Contents
 - [Installation](#installation)
   - [Prepare the Environment](#1-prepare-the-environment)
