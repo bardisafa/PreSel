@@ -152,17 +152,17 @@ python presel/data_selection.py \
 ```
 
 
-### Running on Vision-FLAN Dataset
+### Running on the Vision-FLAN Dataset
 
-For Vision-FLAN dataset, the steps are similar to the LLaVA-1.5 dataset mentioned above. For "Loss/Perplexity Calculations", you can follow the same steps but make sure to adjust the code to Vision-Flan data (e.g. json files, reference set, image-folder etc.)
+For the Vision-FLAN dataset, the steps are similar to those for the LLaVA-1.5 dataset mentioned above. For "Loss/Perplexity Calculations", you can follow the same steps, but make sure to adjust the code to match the Vision-FLAN data format (e.g., JSON files, reference set, image folder, etc.).
 
-For "Task Importance Estimation", you can directly download the estimated task-importance values [here](https://drive.google.com/file/d/1Qw61VKqE8i-MrUfKWApFdKIXKdbBiuZU/view?usp=sharing) and place it in `/data`.
+For "Task Importance Estimation", you can directly download the estimated task importance values [here](https://drive.google.com/file/d/1Qw61VKqE8i-MrUfKWApFdKIXKdbBiuZU/view?usp=sharing) and place it in `/data` directory.
 
-For "Pre-Instruction Data Selection", first use the same code, `data_process/extract_feats_665_dino.py`, to extract VF features. Save it in `/data/dino_feats_vf/dino_feats_all_vf.pt`. Then, run 
+For "Pre-Instruction Data Selection", first use the same script, `data_process/extract_feats_665_dino.py`, to extract VF features. Save the output as `/data/dino_feats_vf/dino_feats_all_vf.pt`. Then, run 
 ```bash
 python data_process/kmeans_clust_vf.py --method typical
 ```
-Finally, run the following to finetune the model on VF selected data
+Finally, run the following command to fine-tune the model on the selected Vision-FLAN data:
 ```bash
 python presel/data_selection.py \
     --base_dir BASE_DIR \
