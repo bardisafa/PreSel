@@ -150,6 +150,17 @@ python presel/data_selection.py \
     --method presel \
     --dataset_type llava
 ```
+
+
+## Running on Vision-FLAN Dataset
+
+For Vision-FLAN dataset, the process is similar but with some differences:
+
+### 1. Task Importance Estimation 
+
+Run the following to get task importance values:
+
+
 ---
 
 
